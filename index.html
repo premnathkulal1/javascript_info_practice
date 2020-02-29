@@ -4,17 +4,16 @@
 <body>
 
   <script>
-	let sayHi = function() {
-	  alert( "Hello" );
+	let sum = (a, b) => a + b;
+
+	/* This arrow function is a shorter form of:
+
+	let sum = function(a, b) {
+	  return a + b;
 	};
-	function sayHi() {   // (1) create
-	  alert( "Hello" );
-	}
+	*/
 
-	let func = sayHi;    // (2) copy
-
-	func(); // Hello     // (3) run the copy (it works)!
-	sayHi(); // Hello    //     this still works too (why wouldn't it)
+	alert( sum(1, 2) ); // 3
   </script>
 
 </body>
