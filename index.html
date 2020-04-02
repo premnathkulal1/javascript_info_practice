@@ -4,10 +4,23 @@
 <body>
 
   <script>
-	var prem = function(){
-		document.write("Hello VCET");
+
+	function ask(question, a, b) {
+	if (confirm(question)) a()
+	else b();
 	}
-	prem();
+
+	function showOk() {
+	alert( "You agreed." );
+	}
+
+	function showCancel() {
+	alert( "You canceled the execution." );
+	}
+
+	// usage: functions showOk, showCancel are passed as arguments to ask
+	ask("Do you agree?", showOk, showCancel);
+
   </script>
 
 </body>
