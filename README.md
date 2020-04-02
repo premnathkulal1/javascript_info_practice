@@ -1,1 +1,3 @@
-# JavaScript practice
+# JavaScript.info practice
+## https://javascript.info
+
